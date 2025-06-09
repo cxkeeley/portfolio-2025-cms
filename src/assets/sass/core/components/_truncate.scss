@@ -1,0 +1,10 @@
+// For text truncate parent container
+.text-truncated {
+  flex: 1;
+  &,
+  & > * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

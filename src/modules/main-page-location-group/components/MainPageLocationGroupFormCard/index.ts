@@ -1,0 +1,3 @@
+import MainPageLocationGroupFormCard from './MainPageLocationGroupFormCard'
+
+export default MainPageLocationGroupFormCard

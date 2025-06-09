@@ -1,0 +1,20 @@
+{
+  "trailingComma": "es5",
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "singleAttributePerLine": true,
+  "endOfLine": "lf",
+  "importOrderSeparation": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@api\/(.*)$",
+    "^@models\/(.*)$",
+    "^@components\/(.*)$",
+    "^@modules\/(.*)$",
+    "^@\/(?!.*[.](scss|css)$).*$",
+    "^[./]",
+    ".(scss|css)$"
+  ]
+}

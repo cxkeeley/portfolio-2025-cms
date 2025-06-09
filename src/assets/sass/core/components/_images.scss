@@ -1,0 +1,26 @@
+// Image thumbnails
+.img-thumbnail {
+  background-color: var(--kt-thumbnail-bg);
+  border: $thumbnail-border-width solid var(--kt-thumbnail-border-color);
+  @include box-shadow(var(--kt-thumbnail-box-shadow));
+}
+
+.figure-caption {
+  color: var(--kt-figure-caption-color);
+}
+
+.fit-contain {
+  object-fit: contain;
+}
+
+.fit-fill {
+  object-fit: fill;
+}
+
+.fit-scale-down {
+  object-fit: scale-down;
+}
+
+.fit-none {
+  object-fit: none;
+}

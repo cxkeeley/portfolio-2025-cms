@@ -1,0 +1,11 @@
+%offcanvas-css-vars {
+  --#{$prefix}offcanvas-color: var(--kt-offcanvas-color);
+  --#{$prefix}offcanvas-bg: var(--kt-offcanvas-bg-color);
+  --#{$prefix}offcanvas-border-color: var(--kt-offcanvas-border-color);
+  --#{$prefix}offcanvas-box-shadow: transparent;
+  --#{$prefix}offcanvas-zindex: 1060;
+}
+
+.offcanvas-backdrop {
+  z-index: 1055;
+}

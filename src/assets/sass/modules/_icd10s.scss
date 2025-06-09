@@ -1,0 +1,23 @@
+.icd10s {
+  &-tree {
+    $tree: &-tree;
+
+    &--list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    &--list li &--list {
+      padding-left: 2rem;
+    }
+
+    &--toggle {
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: var(--kt-gray-200);
+      }
+    }
+  }
+}

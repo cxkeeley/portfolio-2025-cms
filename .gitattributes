@@ -1,0 +1,4 @@
+src/**/*.ts   eol=lf
+src/**/*.tsx  eol=lf
+src/**/*.json eol=lf
+src/**/*.scss eol=lf

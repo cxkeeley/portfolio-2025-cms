@@ -1,0 +1,173 @@
+.medical-record {
+  &__tabs {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+
+    &-tab {
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.2rem;
+    }
+  }
+
+  &__identifier {
+    display: flex;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      background-color: var(--kt-primary);
+      border-radius: 3px;
+
+      &-sm {
+        width: 22px;
+        height: 22px;
+      }
+
+      i {
+        color: var(--kt-white);
+        font-size: 1rem;
+      }
+    }
+
+    &-dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 3px;
+      background-color: var(--kt-secondary);
+
+      i {
+        color: var(--kt-dark);
+        font-size: 0.8rem;
+      }
+    }
+
+    & *:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+
+    &-dropdown {
+      border-radius: 0 3px 3px 0;
+    }
+  }
+
+  .nav {
+    --bs-nav-tabs-border-width: 2px;
+
+    &-link {
+      // background-color: var(--);
+
+      &.active {
+        // border-color: var(--kt-primary);
+        // background-color: var(--kt-primary);
+        // color: var(--kt-white);
+        // border-bottom: none;
+      }
+    }
+  }
+
+  // Quill JS
+  .quill {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .ql-container {
+    height: unset;
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100px;
+  }
+
+  // Changes for select field
+  .react-select {
+    &__control {
+      color: var(--kt-input-color);
+      background-color: var(--kt-input-bg);
+      border: 1px solid var(--kt-input-border-color);
+      box-shadow: none !important;
+    }
+  }
+
+  &__helpers {
+    &-item {
+      background-color: var(--kt-body-bg);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--kt-primary-light);
+      }
+
+      &--disabled {
+        cursor: not-allowed;
+
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+.past-patient {
+  &__card {
+    border: 1px solid var(--bs-border-color) !important;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $primary !important;
+      background-color: var(--kt-primary-light);
+    }
+  }
+
+  &__summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.prescription {
+  &-item {
+    $font-size: 0.9rem;
+    $input-padding: 0.5rem;
+
+    .form-label {
+      font-size: $font-size;
+      margin-bottom: 0.2rem;
+    }
+
+    .form-control {
+      padding: $input-padding;
+      padding-right: 0;
+      font-size: $font-size;
+    }
+
+    input.form-control {
+      line-height: 0;
+    }
+
+    .form-select {
+      padding: $input-padding;
+      padding-right: 2rem;
+      font-size: $font-size;
+
+      background-position: right 0.75rem center;
+      background-size: 9px 9px;
+    }
+
+    .input-group-text {
+      padding: $input-padding;
+      font-size: $font-size;
+    }
+  }
+}

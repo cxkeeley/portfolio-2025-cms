@@ -1,0 +1,18 @@
+//
+// Input group
+//
+
+.input-group-text {
+  color: var(--kt-input-group-addon-color);
+  background-color: var(--kt-input-group-addon-bg);
+  border: $input-border-width solid var(--kt-input-group-addon-border-color);
+}
+
+.form-range {
+  &::-webkit-slider-thumb {
+    outline: 1px solid white;
+  }
+  &::-moz-range-thumb {
+    outline: 1px solid white;
+  }
+}

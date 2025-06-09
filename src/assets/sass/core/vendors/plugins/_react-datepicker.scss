@@ -1,0 +1,218 @@
+.react-datepicker {
+  width: 280px !important;
+  font-family: inherit;
+  border: 0;
+  border-radius: 0;
+  box-shadow: var(--kt-dropdown-box-shadow);
+  background-color: var(--kt-body-bg);
+  border-radius: 0.475rem;
+
+  &__header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    padding: 0 1rem;
+
+    &-prev-month,
+    &-next-month {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 30px;
+      height: 30px;
+      color: rgba(0, 0, 0, 0.8);
+      border-radius: 0.475rem;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:hover {
+        background: var(--kt-gray-100);
+        color: #959ea9;
+      }
+    }
+  }
+
+  &__input {
+    &-time {
+      &-container {
+        clear: both;
+        width: 100%;
+        float: unset;
+        text-align: left;
+        padding: 5px 20px 15px 20px;
+        margin: 0;
+      }
+    }
+  }
+
+  &-time {
+    &-container {
+      clear: unset;
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding: 5px 0 10px 15px;
+      margin: 0;
+    }
+
+    &__caption {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--kt-form-label-color);
+    }
+
+    &__input {
+      margin-right: 20px;
+
+      &-icon {
+        right: 17px;
+        top: 15px;
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__day {
+    font-size: 1rem;
+    border-radius: 0.475rem;
+    box-shadow: none !important;
+    height: 36px;
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0;
+    line-height: 36px;
+    color: var(--kt-gray-700);
+    margin-top: 0 !important;
+
+    &:hover {
+      cursor: pointer;
+      outline: 0;
+      background: var(--kt-component-hover-bg);
+      color: var(--kt-component-hover-color);
+      border-color: transparent;
+    }
+
+    &--outside-month {
+      color: var(--kt-gray-400);
+      background: transparent;
+      border-color: transparent;
+    }
+
+    &--in-range,
+    &--in-selecting-range {
+      background: var(--kt-component-hover-bg);
+      border-color: transparent;
+      border-radius: 0;
+    }
+
+    &--selected,
+    &--keyboard-selected,
+    &--range-start,
+    &--range-end,
+    &--selecting-range-start {
+      background: var(--kt-component-active-bg);
+      color: var(--kt-component-active-color);
+    }
+
+    &--range-start,
+    &--selecting-range-start {
+      border-radius: 0.475rem 0 0 0.475rem;
+    }
+
+    &--range-end {
+      border-radius: 0 0.475rem 0.475rem 0;
+    }
+
+    &--disabled {
+      color: var(--kt-gray-300);
+    }
+  }
+
+  &__day-names {
+    display: flex;
+    padding: 0.5rem 1rem;
+  }
+
+  &__day-name {
+    width: 100%;
+    text-align: center;
+    color: var(--kt-gray-800);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: unset;
+    margin: 0;
+  }
+
+  &__week {
+    display: flex;
+  }
+
+  &__month {
+    width: 100%;
+    padding: 0 1rem 0.5rem 1rem;
+    margin: 0;
+
+    &-container {
+      width: 100%;
+    }
+
+    &-dropdown-custom {
+      border: 0 !important;
+      background-color: var(--kt-body-bg);
+      font-size: 1rem;
+      color: var(--kt-gray-700);
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      margin-right: 0.5rem;
+      outline: none !important;
+      border-radius: 0.475rem;
+      appearance: none;
+    }
+  }
+
+  &__current-month {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    font-weight: 500;
+    color: inherit;
+    font-size: 135%;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__current-year {
+    width: 75px;
+  }
+
+  &__year-input {
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    cursor: text;
+    margin: 0;
+    display: inline-block;
+    font-family: inherit;
+    line-height: inherit;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    vertical-align: initial;
+    appearance: textfield;
+    color: var(--kt-gray-700);
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    outline: 0 !important;
+  }
+}

@@ -1,0 +1,135 @@
+.react-select {
+  &__control {
+    background-color: var(--kt-input-solid-bg);
+    border-color: var(--kt-input-solid-bg);
+    color: var(--kt-input-solid-color);
+    width: 100%;
+    display: flex;
+    border-radius: var(--bs-border-radius);
+  }
+
+  &__single-value,
+  &__placeholder {
+    position: absolute;
+    left: 15px;
+    font-size: $font-size-input;
+    font-weight: $font-weight-normal;
+    line-height: 1.5;
+    color: var(--kt-input-solid-color);
+  }
+
+  &__placeholder {
+    color: var(--kt-input-solid-placeholder-color);
+  }
+
+  &__menu {
+    border: 0;
+    box-shadow: var(--kt-dropdown-box-shadow) !important;
+    background-color: var(--kt-menu-dropdown-bg-color) !important;
+    border-radius: 0.475rem;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__option {
+    position: relative;
+    color: var(--kt-gray-700) !important;
+    transition: 0.2s ease;
+    padding: 0.75rem 1.25rem;
+    margin: 0 0;
+    cursor: pointer !important;
+
+    &--is-focused,
+    &:hover {
+      background-color: var(--kt-component-hover-bg) !important;
+      color: var(--kt-component-hover-color) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--kt-component-hover-bg) !important;
+      color: var(--kt-component-hover-color) !important;
+
+      &::after {
+        top: 50%;
+        display: block;
+        position: absolute;
+        transform: translateY(-50%);
+        height: 0.75rem;
+        width: 0.75rem;
+        content: '';
+        @include svg-bg-icon(check, var(--kt-component-hover-color));
+        mask-position: center;
+        -webkit-mask-position: center;
+        right: $select2-dropdown-option-check-padding;
+      }
+    }
+  }
+
+  &__value-container {
+    padding: 0.775rem 1rem !important;
+    gap: 3px !important;
+  }
+
+  &__input-container {
+    color: var(--kt-input-solid-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  &__input {
+    padding: 1px 0 !important;
+    margin: 1px 0 !important;
+    font-weight: $font-weight-normal !important;
+    line-height: 1.5 !important;
+  }
+
+  &__multi-value {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: var(--bs-badge-border-radius) !important;
+    display: inline-flex !important;
+
+    &__remove {
+      padding-left: 6px !important;
+      border-radius: inherit !important;
+    }
+  }
+
+  &--is-disabled &__control {
+    color: var(--kt-input-disabled-color) !important;
+    background-color: var(--kt-input-disabled-bg) !important;
+  }
+
+  &__indicators {
+    margin-right: 10px;
+  }
+
+  &__indicator {
+    &:last-child {
+      margin-left: 5px;
+    }
+
+    i {
+      font-size: 12px;
+      color: #7e8299;
+    }
+
+    &-separator {
+      margin: 10px 0 !important;
+    }
+  }
+
+  &__clear-indicator {
+    cursor: pointer;
+
+    i {
+      font-size: 10px;
+    }
+  }
+
+  &--dropdown-indicator {
+    margin-left: 5px;
+  }
+}

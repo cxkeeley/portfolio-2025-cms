@@ -1,0 +1,110 @@
+.cursor {
+  &-drag {
+    cursor: grab !important;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &-not-allowed {
+    cursor: not-allowed !important;
+  }
+}
+
+.popup-content {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+html[data-theme='dark'] .popup-content {
+  background-color: rgb(41, 45, 62);
+  color: #fff;
+  border: 1px solid #9a9595;
+}
+
+html[data-theme='light'] .popup-content {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #d7d7d7;
+}
+
+html[data-theme='dark'] .popup-arrow > svg {
+  color: rgb(41, 45, 62);
+  stroke-width: 2px;
+  stroke: #9a9595;
+  stroke-dasharray: 30px;
+  stroke-dashoffset: -54px;
+}
+
+html[data-theme='light'] .popup-arrow > svg {
+  color: #fff;
+  stroke-width: 2px;
+  stroke: #d7d7d7;
+  stroke-dasharray: 30px;
+  stroke-dashoffset: -54px;
+}
+
+svg.kupu-logo {
+  path:not(.logo) {
+    fill: var(--kt-dark);
+  }
+}
+
+.left-0 {
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.p-2px {
+  padding: 2px;
+}
+
+.p-14px {
+  padding: 14px;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+// Fix Sweetalert body Height when active
+body#kt_body.swal2-height-auto {
+  height: 100% !important;
+}
+
+.rounded-25px {
+  border-radius: 25px !important;
+}
+
+.table {
+  .table-hover-primary tr:hover {
+    th,
+    td {
+      background-color: var(--kt-primary-light) !important;
+    }
+  }
+
+  tr.active {
+    th,
+    td {
+      background-color: var(--kt-primary-light) !important;
+      color: var(--kt-primary) !important;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+//
+// Custom utilities
+//
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'position': (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky,
+    ),
+    'opacity': (
+      property: opacity,
+      class: opacity,
+      values: $opacity-values,
+    ),
+    'opacity-hover': (
+      property: opacity,
+      state: hover,
+      class: opacity,
+      values: $opacity-values,
+    ),
+    'font-size': (
+      rfs: true,
+      responsive: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+    ),
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        lighter: $font-weight-lighter,
+        light: $font-weight-light,
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        semibold: $font-weight-semibold,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder
+      )
+    ),
+    'width': (
+      responsive: true,
+      property: width,
+      class: w,
+      values: $custom-sizes,
+    ),
+    'max-width': (
+      responsive: true,
+      property: max-width,
+      class: mw,
+      values: $custom-sizes,
+    ),
+    'min-width': (
+      responsive: true,
+      property: min-width,
+      class: min-w,
+      values: $custom-sizes,
+    ),
+    'height': (
+      responsive: true,
+      property: height,
+      class: h,
+      values: $custom-sizes,
+    ),
+    'max-height': (
+      responsive: true,
+      property: max-height,
+      class: mh,
+      values: $custom-sizes,
+    ),
+    'min-height': (
+      responsive: true,
+      property: min-height,
+      class: min-h,
+      values: $custom-sizes,
+    ),
+    'z-index': (
+      property: z-index,
+      class: z-index,
+      values: $zindex-values,
+    ),
+    'border-top-width': (
+      property: border-top-width,
+      class: border-top,
+      values: $border-widths,
+    ),
+    'border-bottom-width': (
+      property: border-bottom-width,
+      class: border-bottom,
+      values: $border-widths,
+    ),
+    'border-right-width': (
+      property: border-right-width,
+      class: border-right,
+      values: $border-widths,
+    ),
+    'border-left-width': (
+      property: border-left-width,
+      class: border-left,
+      values: $border-widths,
+    ),
+    'line-height': (
+      property: line-height,
+      class: lh,
+      values: (
+        0: 0,
+        1: 1,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg,
+        xl: $line-height-xl,
+        xxl: $line-height-xxl,
+      ),
+    ),
+    'letter-spacing': (
+      property: letter-spacing,
+      class: ls,
+      values: $letter-spacing-values,
+    ),
+    'rounded': (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        4: $border-radius-xl,
+        circle: 50%,
+        pill: $border-radius-pill,
+      ),
+    ),
+    'min-vh': (
+      property: min-height,
+      class: min-vh,
+      values: (
+        10: 10vh,
+        20: 20vh,
+        30: 30vh,
+        40: 40vh,
+        50: 50vh,
+        60: 60vh,
+        70: 70vh,
+        80: 80vh,
+        90: 90vh,
+        100: 100vh,
+      ),
+    ),
+    'max-vh': (
+      property: max-height,
+      class: max-vh,
+      values: (
+        10: 10vh,
+        20: 20vh,
+        30: 30vh,
+        40: 40vh,
+        50: 50vh,
+        60: 60vh,
+        70: 70vh,
+        80: 80vh,
+        90: 90vh,
+        100: 100vh,
+      ),
+    ),
+  )
+);

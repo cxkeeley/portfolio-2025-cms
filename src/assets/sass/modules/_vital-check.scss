@@ -1,0 +1,38 @@
+.vital-check {
+  &-bmi {
+    &-underweight {
+      color: #ffffff;
+      background-color: #2e2eff;
+    }
+
+    &-normal {
+      color: #ffffff;
+      background-color: #24e500;
+    }
+
+    &-overweight {
+      color: #000000;
+      background-color: #ffee00;
+    }
+
+    &-preobese {
+      color: #000000;
+      background-color: #fbb806;
+    }
+
+    &-obese {
+      color: #ffffff;
+      background-color: #f6830c;
+    }
+
+    &-morbidobese {
+      color: #ffffff;
+      background-color: #f24d11;
+    }
+
+    &-superobese {
+      color: #ffffff;
+      background-color: #ed1717;
+    }
+  }
+}

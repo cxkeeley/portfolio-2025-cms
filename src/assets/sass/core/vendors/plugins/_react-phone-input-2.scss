@@ -1,0 +1,104 @@
+.react-tel-input {
+  font-family: inherit;
+  font-size: inherit;
+
+  .form-control {
+    height: unset;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    padding-left: 55px;
+  }
+
+  .flag-dropdown {
+    background-color: transparent !important;
+    border: none;
+
+    .selected-flag {
+      background-color: transparent !important;
+      padding: 0 0 0 1rem;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+
+      .flag {
+        top: unset;
+        margin-top: 0;
+
+        .arrow {
+          margin-top: 0;
+          left: 25px;
+          position: relative;
+          border: 0;
+
+          &:before {
+            font-family: FontAwesome;
+            content: '\f078';
+            position: absolute;
+            color: var(--kt-gray-600) !important;
+            font-size: 12px;
+            top: -8px;
+          }
+        }
+      }
+    }
+
+    .country-list {
+      max-width: 250px;
+      border: 0;
+      box-shadow: var(--kt-dropdown-box-shadow) !important;
+      background-color: var(--kt-menu-dropdown-bg-color) !important;
+      border-radius: 0.475rem;
+      padding: 1rem 0;
+      margin: 0;
+      position: absolute;
+      top: 45px;
+      z-index: 1;
+      overflow-y: auto;
+
+      .country {
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+
+        &:hover {
+          background-color: var(--kt-component-hover-bg) !important;
+          color: var(--kt-component-hover-color) !important;
+        }
+
+        &:hover .dial-code,
+        &.highlight .dial-code {
+          color: var(--kt-component-hover-color) !important;
+        }
+
+        &.highlight {
+          background-color: var(--kt-component-hover-bg) !important;
+          color: var(--kt-component-hover-color) !important;
+
+          &::after {
+            top: 50%;
+            display: block;
+            position: absolute;
+            transform: translateY(-50%);
+            height: 0.75rem;
+            width: 0.75rem;
+            content: '';
+            @include svg-bg-icon(check, var(--kt-component-hover-color));
+            mask-position: center;
+            -webkit-mask-position: center;
+            right: $select2-dropdown-option-check-padding;
+          }
+        }
+      }
+
+      .flag {
+        margin-right: 10px;
+        margin-top: 2px;
+      }
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+}

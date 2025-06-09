@@ -1,0 +1,35 @@
+.pinpoint {
+  z-index: 2;
+  position: absolute;
+  top: calc(50% - 44px);
+  left: calc(50% - 17px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='16' height='11' viewBox='0 0 16 11' xmlns='http://www.w3.org/2000/svg'><defs><filter x='-25%' y='-42.9%' width='150%' height='185.7%' filterUnits='objectBoundingBox' id='a'><feGaussianBlur stdDeviation='1' in='SourceGraphic'/></filter></defs><ellipse filter='url(%23a)' cx='6' cy='3.5' rx='6' ry='3.5' transform='translate(2, 2)' opacity='.2'/></svg>");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 99;
+    top: 100%;
+    transform: translate(0px, -100%);
+    left: 0px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 48px;
+    position: relative;
+    transition: transform 300ms cubic-bezier(0.63, 0.01, 0.29, 1) 0s;
+    z-index: 100;
+    transform: translate(0px, 0px);
+  }
+
+  &.elevated {
+    .icon {
+      transform: translate(0px, -12px);
+    }
+  }
+}
