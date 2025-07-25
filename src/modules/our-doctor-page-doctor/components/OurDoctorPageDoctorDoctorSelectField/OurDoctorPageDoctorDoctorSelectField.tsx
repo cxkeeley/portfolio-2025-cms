@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'react-intl'
 
-import AdminDoctorsAPI from '@api/admin/doctorsAPI'
+import AdminDoctorsAPI from '@api/admin/teamsAPI'
 
 import { initialQueryState } from '@models/apiBase'
 import { Option } from '@models/option'

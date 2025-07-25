@@ -9,7 +9,7 @@ import AdminLocationLanguagesAPI, {
   PayloadAdminLocationLanguageCreate,
   PayloadAdminLocationLanguageUpdate,
 } from '@api/admin/locationLanguagesAPI'
-import AdminLocationsAPI from '@api/admin/locationsAPI'
+import AdminLocationsAPI from '@api/admin/projectsAPI'
 
 import { LanguageCodeEnum } from '@models/language'
 import { LocationLanguageModel } from '@models/locationLanguage'

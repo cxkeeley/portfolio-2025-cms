@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { useNavigate, useParams } from 'react-router-dom'
 
-import AdminDoctorsAPI, { PayloadUpdateDoctor } from '@api/admin/doctorsAPI'
+import AdminDoctorsAPI, { PayloadUpdateDoctor } from '@api/admin/teamsAPI'
 
 import { ID } from '@models/base'
 import { Option } from '@models/option'

@@ -4,7 +4,7 @@ import Alert from 'react-bootstrap/Alert'
 import Modal from 'react-bootstrap/Modal'
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationLabelsAPI from '@api/admin/locationLabelsAPI'
+import AdminLocationLabelsAPI from '@api/admin/projectLabelsAPI'
 
 import { Button } from '@components/Button'
 import { FileInputField } from '@components/Form/FileInput'
@@ -44,7 +44,7 @@ const LocationLabelUpdateFormModal: FC<LocationLabelUpdateFormModalProps> = (pro
       show={props.isShow}
       onHide={() => {
         setError(undefined)
-        
+
         props.onCancel()
       }}
     >

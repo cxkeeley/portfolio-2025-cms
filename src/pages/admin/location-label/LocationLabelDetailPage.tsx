@@ -8,7 +8,7 @@ import AdminLocationLabelLanguageAPI, {
   PayloadLocationLabelLanguageCreate,
   PayloadLocationLabelLanguageUpdate,
 } from '@api/admin/locationLabelLanguagesAPI'
-import AdminLocationLabelsAPI, { PayloadUpdateLocationLabelMapIcon } from '@api/admin/locationLabelsAPI'
+import AdminLocationLabelsAPI, { PayloadUpdateLocationLabelMapIcon } from '@api/admin/projectLabelsAPI'
 
 import { LanguageCodeEnum } from '@models/language'
 import { LocationLabelLanguageModel } from '@models/locationLabelLanguage'

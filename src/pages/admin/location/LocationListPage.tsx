@@ -3,9 +3,9 @@ import { FC, useCallback, useMemo } from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { Link } from 'react-router-dom'
 
-import AdminLocationsAPI, { PayloadAdminLocationFilter } from '@api/admin/locationsAPI'
+import AdminLocationsAPI, { PayloadAdminLocationFilter } from '@api/admin/projectsAPI'
 
-import { LocationModel } from '@models/location'
+import { LocationModel } from '@models/project'
 
 import { Button } from '@components/Button'
 import EmptyPlaceholderText from '@components/EmptyPlaceholderText'

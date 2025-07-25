@@ -4,10 +4,10 @@ import { FC, useCallback, useMemo } from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { Link } from 'react-router-dom'
 
-import AdminDoctorsAPI from '@api/admin/doctorsAPI'
+import AdminDoctorsAPI from '@api/admin/teamsAPI'
 
 import { ID } from '@models/base'
-import DoctorModel from '@models/doctor'
+import DoctorModel from '@models/team'
 
 import { Button } from '@components/Button'
 import ErrorCard from '@components/ErrorCard/ErrorCard'

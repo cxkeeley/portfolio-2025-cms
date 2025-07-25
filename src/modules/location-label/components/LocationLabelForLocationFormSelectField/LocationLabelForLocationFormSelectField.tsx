@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationLabelsAPI from '@api/admin/locationLabelsAPI'
+import AdminLocationLabelsAPI from '@api/admin/projectLabelsAPI'
 
 import { initialQueryState } from '@models/apiBase'
 import { Option } from '@models/option'

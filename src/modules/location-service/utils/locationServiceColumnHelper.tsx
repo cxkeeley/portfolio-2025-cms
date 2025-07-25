@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table'
 import { FormattedMessage } from 'react-intl'
 
-import { LocationServiceModel } from '@models/locationService'
+import { LocationServiceModel } from '@models/projectService'
 
 import EmptyPlaceholderText from '@components/EmptyPlaceholderText'
 import { FormatDate } from '@components/FormatDate'

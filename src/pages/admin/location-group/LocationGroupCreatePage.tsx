@@ -1,14 +1,16 @@
+import { useQueryClient } from '@tanstack/react-query'
 import { FC } from 'react'
+import { useIntl } from 'react-intl'
 import { useNavigate } from 'react-router-dom'
 
-import FormUtil from '@/utils/formUtil'
-import { useToast } from '@/hooks'
-import { useIntl } from 'react-intl'
-import { useQueryClient } from '@tanstack/react-query'
-import { QUERIES } from '@/constants/queries'
+import AdminLocationGroupsAPI, { PayloadLocationGroupCreate } from '@api/admin/projectGroupsAPI'
+
 import { LocationGroupFormCardShape } from '@modules/location-group/components/LocationGroupFormCard'
-import AdminLocationGroupsAPI, { PayloadLocationGroupCreate } from '@api/admin/locationGroupsAPI'
 import LocationGroupFormCard from '@modules/location-group/components/LocationGroupFormCard/LocationGroupFormCard'
+
+import { QUERIES } from '@/constants/queries'
+import { useToast } from '@/hooks'
+import FormUtil from '@/utils/formUtil'
 
 type Props = {}
 

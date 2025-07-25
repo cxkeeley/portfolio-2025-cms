@@ -2,7 +2,7 @@ import { useQueryClient } from '@tanstack/react-query'
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import AdminLocationLabelsAPI, { PayloadCreateLocationLabel } from '@api/admin/locationLabelsAPI'
+import AdminLocationLabelsAPI, { PayloadCreateLocationLabel } from '@api/admin/projectLabelsAPI'
 
 import LocationLabelFormCard, {
   LocationLabelFormCardShape,

@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table'
 import { FormattedMessage } from 'react-intl'
 
-import { LocationLabelModel } from '@models/locationLabel'
+import { LocationLabelModel } from '@models/projectLabel'
 
 import EmptyPlaceholderText from '@components/EmptyPlaceholderText'
 import { FormatDate } from '@components/FormatDate'

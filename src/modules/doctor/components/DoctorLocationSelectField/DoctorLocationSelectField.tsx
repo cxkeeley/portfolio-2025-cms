@@ -1,6 +1,6 @@
 import { useIntl } from 'react-intl'
 
-import AdminLocationsAPI from '@api/admin/locationsAPI'
+import AdminLocationsAPI from '@api/admin/projectsAPI'
 
 import { initialQueryState } from '@models/apiBase'
 import { Option } from '@models/option'

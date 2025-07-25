@@ -4,7 +4,7 @@ import { Alert, Col, Row } from 'react-bootstrap'
 import Modal from 'react-bootstrap/Modal'
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationImagesAPI from '@api/admin/locationImagesAPI'
+import AdminLocationImagesAPI from '@api/admin/projectImagesAPI'
 
 import { Button } from '@components/Button'
 import { ImageUploadField } from '@components/Form/ImageUpload'

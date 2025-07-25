@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { useNavigate } from 'react-router-dom'
 
-import AdminLocationsAPI, { PayloadAdminLocationCreate } from '@api/admin/locationsAPI'
+import AdminLocationsAPI, { PayloadAdminLocationCreate } from '@api/admin/projectsAPI'
 
 import { LocationFormCard, LocationFormCardShape } from '@modules/location/components/LocationFormCard'
 

@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { useIntl } from 'react-intl'
 import { useNavigate } from 'react-router-dom'
 
-import AdminDoctorsAPI, { PayloadCreateDoctor } from '@api/admin/doctorsAPI'
+import AdminDoctorsAPI, { PayloadCreateDoctor } from '@api/admin/teamsAPI'
 
 import { ID } from '@models/base'
 

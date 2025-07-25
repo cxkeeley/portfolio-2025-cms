@@ -3,7 +3,7 @@ import { FC, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { FormattedMessage, useIntl } from 'react-intl'
 
-import AdminDoctorsAPI from '@api/admin/doctorsAPI'
+import AdminDoctorsAPI from '@api/admin/teamsAPI'
 
 import { Option } from '@models/option'
 

@@ -8,8 +8,8 @@ import { Link, useParams } from 'react-router-dom'
 import AdminDoctorLanguagesAPI, {
   PayloadCreateDoctorLanguage,
   PayloadUpdateDoctorLanguage,
-} from '@api/admin/doctorLanguagesAPI'
-import AdminDoctorsAPI, { ResponseDoctor } from '@api/admin/doctorsAPI'
+} from '@api/admin/teamLanguagesAPI'
+import AdminDoctorsAPI, { ResponseDoctor } from '@api/admin/teamsAPI'
 
 import { ID } from '@models/base'
 import DoctorLanguageModel from '@models/doctorLanguage'

@@ -3,9 +3,9 @@ import { FC, useCallback, useMemo } from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { NavLink } from 'react-router-dom'
 
-import AdminLocationGroupsAPI from '@api/admin/locationGroupsAPI'
+import AdminLocationGroupsAPI from '@api/admin/projectGroupsAPI'
 
-import { LocationGroupModel } from '@models/locationGroup'
+import { LocationGroupModel } from '@models/projectGroup'
 
 import { Button } from '@components/Button'
 import EmptyPlaceholderText from '@components/EmptyPlaceholderText'

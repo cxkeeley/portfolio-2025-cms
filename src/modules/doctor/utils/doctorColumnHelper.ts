@@ -1,6 +1,6 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
-import DoctorModel from '@models/doctor'
+import DoctorModel from '@models/team'
 
 const doctorColumnHelper = createColumnHelper<DoctorModel>()
 

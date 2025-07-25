@@ -7,10 +7,10 @@ import { NavLink } from 'react-router-dom'
 import AdminLocationReviewsAPI, {
   PayloadAdminLocationReviewCreate,
   PayloadAdminLocationReviewFilter,
-} from '@api/admin/locationReviewsAPI'
+} from '@api/admin/projectReviewsAPI'
 
 import { ID } from '@models/base'
-import { LocationReviewModel } from '@models/locationReview'
+import { LocationReviewModel } from '@models/projectReview'
 
 import { Avatar } from '@components/Avatar'
 import { Button } from '@components/Button'
@@ -21,6 +21,7 @@ import { Table } from '@components/Table'
 import locationReviewHelper from '@modules/location-review/utils/locationReviewHelper'
 import { PermissionsControl } from '@modules/permissions'
 
+import { PagePermission } from '@/constants/pagePermission'
 import { PermissionEnum } from '@/constants/permission'
 import { QUERIES } from '@/constants/queries'
 import { useAlert, useBoolState, useToast } from '@/hooks'
@@ -31,7 +32,6 @@ import LocationReviewFormModal, {
   LocationReviewFormModalShape,
 } from '../../../location-review/components/LocationReviewFormModal'
 import LocationContentTabBodyLoading from '../LocationContentTabBodyLoading'
-import { PagePermission } from '@/constants/pagePermission'
 
 type Props = {
   locationId: ID

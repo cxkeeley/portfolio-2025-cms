@@ -4,11 +4,11 @@ import { Col, Row, Stack } from 'react-bootstrap'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { useParams } from 'react-router-dom'
 
-import AdminLocationServicesAPI, { PayloadLocationServiceImageUpdate } from '@api/admin/locationServiceAPI'
+import AdminLocationServicesAPI, { PayloadLocationServiceImageUpdate } from '@api/admin/projectServiceAPI'
 import AdminLocationServiceLanguagesAPI, {
   PayloadLocationServiceLanguageCreate,
   PayloadLocationServiceLanguageUpdate,
-} from '@api/admin/locationServiceLanguagesAPI'
+} from '@api/admin/projectServiceLanguagesAPI'
 
 import { LanguageCodeEnum } from '@models/language'
 import { LocationServiceLanguageModel } from '@models/locationServiceLanguage'

@@ -7,8 +7,8 @@ import { useParams } from 'react-router-dom'
 import AdminLocationImageLanguagesAPI, {
   PayloadAdminLocationImageLanguageCreate,
   PayloadAdminLocationImageLanguageUpdate,
-} from '@api/admin/locationImageLanguagesAPI'
-import AdminLocationImagesAPI from '@api/admin/locationImagesAPI'
+} from '@api/admin/projectImageLanguagesAPI'
+import AdminLocationImagesAPI from '@api/admin/projectImagesAPI'
 
 import { LanguageCodeEnum } from '@models/language'
 import { LocationImageLanguageModel } from '@models/locationImageLanguage'

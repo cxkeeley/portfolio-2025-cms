@@ -1,12 +1,13 @@
 import { FormattedMessage } from 'react-intl'
 
+import AdminLocationGroupsAPI from '@api/admin/projectGroupsAPI'
+
 import { initialQueryState } from '@models/apiBase'
 import { Option } from '@models/option'
 
 import { AsyncPaginateSelectField, AsyncPaginateSelectFieldProps } from '@components/Form/AsyncPaginateSelect'
 
 import TypeUtil from '@/utils/typeUtil'
-import AdminLocationGroupsAPI from '@api/admin/locationGroupsAPI'
 
 type Props<IsMulti extends boolean> = Omit<AsyncPaginateSelectFieldProps<IsMulti>, 'onSearch'>
 

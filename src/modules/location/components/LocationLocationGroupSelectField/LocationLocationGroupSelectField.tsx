@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationGroupAPI from '@api/admin/locationGroupsAPI'
+import AdminLocationGroupAPI from '@api/admin/projectGroupsAPI'
 
 import { initialQueryState } from '@models/apiBase'
 import { Option } from '@models/option'

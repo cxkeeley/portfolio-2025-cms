@@ -5,7 +5,7 @@ import { Stack } from 'react-bootstrap'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { NavLink } from 'react-router-dom'
 
-import AdminLocationsAPI, { PayloadAdminLocationCreateService } from '@api/admin/locationsAPI'
+import AdminLocationsAPI, { PayloadAdminLocationCreateService } from '@api/admin/projectsAPI'
 
 import { ID } from '@models/base'
 import { LocationHasServiceModel } from '@models/locationHasService'

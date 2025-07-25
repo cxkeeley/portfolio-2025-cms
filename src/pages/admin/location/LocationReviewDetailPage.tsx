@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import { FormattedMessage } from 'react-intl'
 import { useParams } from 'react-router-dom'
 
-import AdminLocationReviewsAPI from '@api/admin/locationReviewsAPI'
+import AdminLocationReviewsAPI from '@api/admin/projectReviewsAPI'
 
 import { Button } from '@components/Button'
 import ErrorCard from '@components/ErrorCard'

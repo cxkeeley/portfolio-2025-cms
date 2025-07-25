@@ -3,9 +3,9 @@ import { FC, useCallback, useMemo } from 'react'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { NavLink } from 'react-router-dom'
 
-import AdminLocationLabelsAPI from '@api/admin/locationLabelsAPI'
+import AdminLocationLabelsAPI from '@api/admin/projectLabelsAPI'
 
-import { LocationLabelModel } from '@models/locationLabel'
+import { LocationLabelModel } from '@models/projectLabel'
 
 import { Button } from '@components/Button'
 import ErrorCard from '@components/ErrorCard'

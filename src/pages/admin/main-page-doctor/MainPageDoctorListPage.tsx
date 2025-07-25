@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Stack from 'react-bootstrap/Stack'
 import { FormattedMessage, useIntl } from 'react-intl'
 
-import AdminMainPageDoctorsAPI, { PayloadCreateMainPageDoctor } from '@api/admin/mainPageDoctorAPI'
+import AdminMainPageDoctorsAPI, { PayloadCreateMainPageDoctor } from '@api/admin/mainPageTeamAPI'
 
 import { MainPageDoctorModel } from '@models/mainPageDoctor'
 

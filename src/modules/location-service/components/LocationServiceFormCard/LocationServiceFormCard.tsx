@@ -3,7 +3,7 @@ import { FC, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationServicesAPI from '@api/admin/locationServiceAPI'
+import AdminLocationServicesAPI from '@api/admin/projectServiceAPI'
 
 import AlertErrorForm from '@components/AlertErrorForm'
 import { Button } from '@components/Button'

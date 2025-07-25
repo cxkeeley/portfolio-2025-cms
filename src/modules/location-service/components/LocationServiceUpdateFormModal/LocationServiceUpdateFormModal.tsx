@@ -4,7 +4,7 @@ import Alert from 'react-bootstrap/Alert'
 import Modal from 'react-bootstrap/Modal'
 import { FormattedMessage } from 'react-intl'
 
-import AdminLocationServicesAPI from '@api/admin/locationServiceAPI'
+import AdminLocationServicesAPI from '@api/admin/projectServiceAPI'
 
 import { Button } from '@components/Button'
 import { FileInputField } from '@components/Form/FileInput'

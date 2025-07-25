@@ -5,7 +5,7 @@ import { Stack } from 'react-bootstrap'
 import { FormattedMessage, useIntl } from 'react-intl'
 import { NavLink } from 'react-router-dom'
 
-import AdminLocationImagesAPI, { PayloadAdminLocationImageCreate } from '@api/admin/locationImagesAPI'
+import AdminLocationImagesAPI, { PayloadAdminLocationImageCreate } from '@api/admin/projectImagesAPI'
 
 import { ID } from '@models/base'
 import { LocationImageModel } from '@models/locationImage'
@@ -18,6 +18,7 @@ import LocationImage from '@modules/article/components/ArticleImage/ArticleImage
 import { PermissionsControl } from '@modules/permissions'
 import { usePermissions } from '@modules/permissions/core/PermissionsProvider'
 
+import { PagePermission } from '@/constants/pagePermission'
 import { PermissionEnum } from '@/constants/permission'
 import { QUERIES } from '@/constants/queries'
 import { useAlert, useBoolState, useToast } from '@/hooks'
@@ -27,7 +28,6 @@ import FormUtil from '@/utils/formUtil'
 
 import LocationContentTabBodyLoading from '../LocationContentTabBodyLoading'
 import LocationImageFormModal, { LocationImageFormModalShape } from '../LocationImageFormModal'
-import { PagePermission } from '@/constants/pagePermission'
 
 type Props = {
   locationId: ID

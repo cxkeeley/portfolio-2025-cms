@@ -7,8 +7,8 @@ import { useParams } from 'react-router-dom'
 import AdminLocationGroupLanguagesAPI, {
   PayloadLocationGroupLanguageCreate,
   PayloadLocationGroupLanguageUpdate,
-} from '@api/admin/locationGroupLanguagesAPI'
-import AdminLocationGroupsAPI, { PayloadLocationGroupUpdateImage } from '@api/admin/locationGroupsAPI'
+} from '@api/admin/projectGroupLanguagesAPI'
+import AdminLocationGroupsAPI, { PayloadLocationGroupUpdateImage } from '@api/admin/projectGroupsAPI'
 
 import { LanguageCodeEnum } from '@models/language'
 import { LocationGroupLanguageModel } from '@models/locationGroupLanguage'
@@ -31,13 +31,13 @@ import LocationGroupUpdateFormModal, {
 } from '@modules/location-group/components/LocationGroupUpdateFormModal/LocationGroupUpdateFormModal'
 import { PermissionsControl } from '@modules/permissions'
 
+import { DEFAULT_LANGUAGE } from '@/constants/constant'
 import { PermissionEnum } from '@/constants/permission'
 import { QUERIES } from '@/constants/queries'
 import { useAlert, useBoolState, useToast } from '@/hooks'
 import AxiosUtil from '@/utils/axiosUtil'
 import FormUtil from '@/utils/formUtil'
 import TypeUtil from '@/utils/typeUtil'
-import { DEFAULT_LANGUAGE } from '@/constants/constant'
 
 const LocationGroupDetailPage: React.FC = () => {
   const intl = useIntl()

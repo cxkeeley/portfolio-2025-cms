@@ -3,19 +3,21 @@ import { FC, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { FormattedMessage, useIntl } from 'react-intl'
 
+import AdminLocationGroupsAPI from '@api/admin/projectGroupsAPI'
+
 import AlertErrorForm from '@components/AlertErrorForm'
 import { Button } from '@components/Button'
 import { ImageUploadField } from '@components/Form/ImageUpload'
+import { TextInputField } from '@components/Form/TextInput'
 import { FormControl } from '@components/FormControl'
 import { FormSection } from '@components/FormSection'
 import { KTCard } from '@components/KTCard'
 
+import { LOCATION_GROUP_IMAGE_ASPECT_RATIO, LOCATION_GROUP_IMAGE_MIN_WIDTH } from '@modules/location-group/constants'
+
 import { useAlert } from '@/hooks'
 import AxiosUtil from '@/utils/axiosUtil'
 import FormUtil, { FormShape } from '@/utils/formUtil'
-import { LOCATION_GROUP_IMAGE_ASPECT_RATIO, LOCATION_GROUP_IMAGE_MIN_WIDTH } from '@modules/location-group/constants'
-import AdminLocationGroupsAPI from '@api/admin/locationGroupsAPI'
-import { TextInputField } from '@components/Form/TextInput'
 
 type LocationGroupFormCardShape = FormShape<{
   image_file_path: string
@@ -75,7 +77,10 @@ const LocationGroupFormCard: FC<Props> = ({ initialValues, onSubmit, onCancel, i
 
               <FormSection
                 title={intl.formatMessage({ id: 'form.section_general_title' })}
-                description={intl.formatMessage({ id: 'form.section_general_description' }, { model: 'location group' })}
+                description={intl.formatMessage(
+                  { id: 'form.section_general_description' },
+                  { model: 'location group' }
+                )}
                 isEndOfChild
               >
                 <Row className="gap-7">
