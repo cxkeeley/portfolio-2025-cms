@@ -1,6 +1,6 @@
 import { BaseModel, ID } from './base'
 import { FileModel } from './file'
-import { ProjectImageLanguageModel } from './locationImageLanguage'
+import { ProjectImageLanguageModel } from './projectImageLanguage'
 
 type ProjectImageModel = BaseModel & {
   image_alt: string

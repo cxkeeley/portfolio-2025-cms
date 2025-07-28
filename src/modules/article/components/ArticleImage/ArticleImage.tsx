@@ -1,6 +1,6 @@
 import { CSSProperties, FC } from 'react'
 
-import { LOCATION_IMAGE_ASPECT_RATIO } from '@modules/location/constants'
+import { PROJECT_IMAGE_ASPECT_RATIO } from '@modules/project/constants'
 
 type Props = {
   src: string
@@ -10,7 +10,7 @@ type Props = {
 
 const LocationImage: FC<Props> = ({ src, caption, width = '100%' }) => {
   const style: CSSProperties = {
-    aspectRatio: LOCATION_IMAGE_ASPECT_RATIO,
+    aspectRatio: PROJECT_IMAGE_ASPECT_RATIO,
     width,
   }
 

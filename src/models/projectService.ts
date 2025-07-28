@@ -1,6 +1,6 @@
 import { BaseModel, ID } from "./base";
 import { FileModel } from "./file";
-import { ProjectServiceLanguageModel } from "./locationServiceLanguage";
+import { ProjectServiceLanguageModel } from "./projectServiceLanguage";
 
 type ProjectServiceModel = BaseModel & {
   default_image_alt: string | null

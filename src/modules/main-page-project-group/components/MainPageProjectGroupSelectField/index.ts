@@ -1,0 +1,3 @@
+import MainPageProjectGroupSelectField from './MainPageProjectGroupSelectField'
+
+export default MainPageProjectGroupSelectField

@@ -14,33 +14,33 @@ type PayloadGetOptionsForCategoryLanguageForm = RequestQuery<{
   category_id: ID
 }>
 
-type PayloadGetOptionsForDoctorLanguageForm = RequestQuery<{
-  doctor_id: ID
+type PayloadGetOptionsForTeamLanguageForm = RequestQuery<{
+  team_id: ID
 }>
 
 type PayloadGetOptionsForPromotionLanguageForm = RequestQuery<{
   promotion_id: ID
 }>
 
-type PayloadAdminLanguageGetOptionsForLocationGroupLanguageForm = RequestQuery<{
-  location_group_id: ID
+type PayloadAdminLanguageGetOptionsForProjectGroupLanguageForm = RequestQuery<{
+  project_group_id: ID
 }>
 
-type PayloadAdminLanguageGetOptionsForLocationLabelLanguageForm = RequestQuery<{
-  location_label_id: ID
+type PayloadAdminLanguageGetOptionsForProjectLabelLanguageForm = RequestQuery<{
+  project_label_id: ID
 }>
 
-type PayloadAdminLanguageGetOptionsForLocationLanguageForm = RequestQuery<{
-  location_id: ID
+type PayloadAdminLanguageGetOptionsForProjectLanguageForm = RequestQuery<{
+  project_id: ID
 }>
 
-type PayloadAdminLanguageGetOptionsForLocationImageLanguageForm = RequestQuery<{
-  location_image_id: ID
+type PayloadAdminLanguageGetOptionsForProjectImageLanguageForm = RequestQuery<{
+  project_image_id: ID
 }>
 
 type PayloadGetOptionsForArticleLanguageForm = RequestQuery<{ article_id: ID }>
 
-type PayloadGetOptionsForLocationServiceLanguageForm = RequestQuery<{ location_service_id: ID }>
+type PayloadGetOptionsForProjectServiceLanguageForm = RequestQuery<{ project_service_id: ID }>
 
 type IAdminLanguagesAPI = {
   getOptionsForCategoryLanguageForm: (
@@ -51,32 +51,32 @@ type IAdminLanguagesAPI = {
     payload: PayloadGetOptionsForArticleLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForDoctorLanguageForm: (
-    payload: PayloadGetOptionsForDoctorLanguageForm
+  getOptionsForTeamLanguageForm: (
+    payload: PayloadGetOptionsForTeamLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
   getOptionsForPromotionLanguageForm: (
     payload: PayloadGetOptionsForPromotionLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForLocationGroupLanguageForm: (
-    query: PayloadAdminLanguageGetOptionsForLocationGroupLanguageForm
+  getOptionsForProjectGroupLanguageForm: (
+    query: PayloadAdminLanguageGetOptionsForProjectGroupLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForLocationLabelLanguageForm: (
-    payload: PayloadAdminLanguageGetOptionsForLocationLabelLanguageForm
+  getOptionsForProjectLabelLanguageForm: (
+    payload: PayloadAdminLanguageGetOptionsForProjectLabelLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForLocationLanguageForm: (
-    query: PayloadAdminLanguageGetOptionsForLocationLanguageForm
+  getOptionsForProjectLanguageForm: (
+    query: PayloadAdminLanguageGetOptionsForProjectLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForLocationImageLanguageForm: (
-    query: PayloadAdminLanguageGetOptionsForLocationImageLanguageForm
+  getOptionsForProjectImageLanguageForm: (
+    query: PayloadAdminLanguageGetOptionsForProjectImageLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 
-  getOptionsForLocationServiceLanguageForm: (
-    payload: PayloadGetOptionsForLocationServiceLanguageForm
+  getOptionsForProjectServiceLanguageForm: (
+    payload: PayloadGetOptionsForProjectServiceLanguageForm
   ) => Promise<AxiosResponse<ResponseLanguages>>
 }
 
@@ -89,42 +89,42 @@ const AdminLanguagesAPI: IAdminLanguagesAPI = {
     return axios.post(`${ADMIN_LANGUAGES_API}/options/article-language-form`, payload)
   },
 
-  getOptionsForDoctorLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/doctor-language-form`, payload)
+  getOptionsForTeamLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/team-language-form`, payload)
   },
 
   getOptionsForPromotionLanguageForm: (payload) => {
     return axios.post(`${ADMIN_LANGUAGES_API}/options/promotion-language-form`, payload)
   },
 
-  getOptionsForLocationGroupLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/location-group-language-form`, payload)
+  getOptionsForProjectGroupLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/project-group-language-form`, payload)
   },
 
-  getOptionsForLocationLabelLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/location-label-language-form`, payload)
+  getOptionsForProjectLabelLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/project-label-language-form`, payload)
   },
 
-  getOptionsForLocationLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/location-language-form`, payload)
+  getOptionsForProjectLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/project-language-form`, payload)
   },
 
-  getOptionsForLocationImageLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/location-image-language-form`, payload)
+  getOptionsForProjectImageLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/project-image-language-form`, payload)
   },
 
-  getOptionsForLocationServiceLanguageForm: (payload) => {
-    return axios.post(`${ADMIN_LANGUAGES_API}/options/location-service-language-form`, payload)
+  getOptionsForProjectServiceLanguageForm: (payload) => {
+    return axios.post(`${ADMIN_LANGUAGES_API}/options/project-service-language-form`, payload)
   },
 }
 
 export type {
   PayloadGetOptionsForCategoryLanguageForm,
   PayloadGetOptionsForArticleLanguageForm,
-  PayloadAdminLanguageGetOptionsForLocationGroupLanguageForm,
-  PayloadAdminLanguageGetOptionsForLocationLanguageForm,
-  PayloadGetOptionsForDoctorLanguageForm,
-  PayloadAdminLanguageGetOptionsForLocationImageLanguageForm,
+  PayloadAdminLanguageGetOptionsForProjectGroupLanguageForm,
+  PayloadAdminLanguageGetOptionsForProjectLanguageForm,
+  PayloadGetOptionsForTeamLanguageForm,
+  PayloadAdminLanguageGetOptionsForProjectImageLanguageForm,
   ResponseLanguages,
 }
 

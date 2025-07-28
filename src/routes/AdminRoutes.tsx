@@ -8,16 +8,16 @@ import { MasterLayout } from '@/layouts/MasterLayout'
 const BannerRoutes = lazy(() => import('./admin/BannerRoutes'))
 const ArticleRoutes = lazy(() => import('./admin/ArticleRoutes'))
 const CategoryRoutes = lazy(() => import('./admin/CategoryRoutes'))
-const DoctorRoutes = lazy(() => import('./admin/DoctorRoutes'))
-const LocationRoutes = lazy(() => import('./admin/LocationRoutes'))
+const TeamRoutes = lazy(() => import('./admin/TeamRoutes'))
+const ProjectRoutes = lazy(() => import('./admin/ProjectRoutes'))
 const MainPageVideoRoutes = lazy(() => import('./admin/MainPageVideoRoutes'))
-const LocationServiceRoutes = lazy(() => import('./admin/LocationServiceRoutes'))
-const LocationGroupRoutes = lazy(() => import('./admin/LocationGroupRoutes'))
-const LocationLabelRoutes = lazy(() => import('./admin/LocationLabelRoutes'))
-const MainPageDoctorRoutes = lazy(() => import('./admin/MainPageDoctorRoutes'))
-const OurDoctorPageDoctorRoutes = lazy(() => import('./admin/OurDoctorPageDoctorRoutes'))
+const ProjectServiceRoutes = lazy(() => import('./admin/ProjectServiceRoutes'))
+const ProjectGroupRoutes = lazy(() => import('./admin/ProjectGroupRoutes'))
+const ProjectLabelRoutes = lazy(() => import('./admin/ProjectLabelRoutes'))
+const MainPageTeamRoutes = lazy(() => import('./admin/MainPageTeamRoutes'))
+const OurTeamPageTeamRoutes = lazy(() => import('./admin/OurTeamPageTeamRoutes'))
 const PromotionRoutes = lazy(() => import('./admin/PromotionRoutes'))
-const MainPageLocationGroupRoutes = lazy(() => import('./admin/MainPageLocationGroupRoutes'))
+const MainPageProjectGroupRoutes = lazy(() => import('./admin/MainPageProjectGroupRoutes'))
 
 const AdminRoutes = () => {
   return (
@@ -42,19 +42,19 @@ const AdminRoutes = () => {
         />
 
         <Route
-          path="doctors/*"
+          path="teams/*"
           element={
             <SuspensedView>
-              <DoctorRoutes />
+              <TeamRoutes />
             </SuspensedView>
           }
         />
 
         <Route
-          path="locations/*"
+          path="projects/*"
           element={
             <SuspensedView>
-              <LocationRoutes />
+              <ProjectRoutes />
             </SuspensedView>
           }
         />
@@ -69,46 +69,46 @@ const AdminRoutes = () => {
         />
 
         <Route
-          path="location-services/*"
+          path="project-services/*"
           element={
             <SuspensedView>
-              <LocationServiceRoutes />
+              <ProjectServiceRoutes />
             </SuspensedView>
           }
         />
 
         <Route
-          path="location-groups/*"
+          path="project-groups/*"
           element={
             <SuspensedView>
-              <LocationGroupRoutes />
+              <ProjectGroupRoutes />
             </SuspensedView>
           }
         />
 
         <Route
-          path="location-labels/*"
+          path="project-labels/*"
           element={
             <SuspensedView>
-              <LocationLabelRoutes />
+              <ProjectLabelRoutes />
             </SuspensedView>
           }
         />
 
         <Route
-          path="main-page-doctors/*"
+          path="main-page-teams/*"
           element={
             <SuspensedView>
-              <MainPageDoctorRoutes />
+              <MainPageTeamRoutes />
             </SuspensedView>
           }
         />
 
         <Route
-          path="our-doctor-page-doctors/*"
+          path="our-team-page-teams/*"
           element={
             <SuspensedView>
-              <OurDoctorPageDoctorRoutes />
+              <OurTeamPageTeamRoutes />
             </SuspensedView>
           }
         />
@@ -132,10 +132,10 @@ const AdminRoutes = () => {
         />
 
         <Route
-          path="main-page-location-groups/*"
+          path="main-page-project-groups/*"
           element={
             <SuspensedView>
-              <MainPageLocationGroupRoutes />
+              <MainPageProjectGroupRoutes />
             </SuspensedView>
           }
         />

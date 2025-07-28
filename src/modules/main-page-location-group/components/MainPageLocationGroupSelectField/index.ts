@@ -1,3 +1,0 @@
-import MainPageLocationGroupSelectField from './MainPageLocationGroupSelectField'
-
-export default MainPageLocationGroupSelectField

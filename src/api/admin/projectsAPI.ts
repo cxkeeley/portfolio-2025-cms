@@ -15,7 +15,7 @@ type PayloadAdminProjectFilter = RequestQuery<{
   project_group_id: ID
 }>
 
-type PayloadAdminProjectGetOptionsForDoctorForm = RequestQuery
+type PayloadAdminProjectGetOptionsForTeamForm = RequestQuery
 
 type PayloadAdminProjectCreate = {
   default_address: string
@@ -69,10 +69,10 @@ const AdminProjectsAPI = {
     return axios.delete(`${ADMIN_PROJECTS_URL}/${projectId}`)
   },
 
-  getOptionsForDoctorForm: async (
-    payload: PayloadAdminProjectGetOptionsForDoctorForm
+  getOptionsForTeamForm: async (
+    payload: PayloadAdminProjectGetOptionsForTeamForm
   ): Promise<AxiosResponse<ResponseProjectsWithFilter>> => {
-    return axios.post(`${ADMIN_PROJECTS_URL}/options/doctor-form`, payload)
+    return axios.post(`${ADMIN_PROJECTS_URL}/options/team-form`, payload)
   },
 
   createService: async (
@@ -103,7 +103,7 @@ export type {
   PayloadAdminProjectCreate,
   PayloadAdminProjectUpdate,
   PayloadAdminProjectFilter,
-  PayloadAdminProjectGetOptionsForDoctorForm,
+  PayloadAdminProjectGetOptionsForTeamForm,
   PayloadAdminProjectCreateService,
 }
 

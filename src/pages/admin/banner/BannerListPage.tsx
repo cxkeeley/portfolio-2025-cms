@@ -69,7 +69,7 @@ const BannerListPage: FC<Props> = () => {
       return previousData
     },
     onError: (err, _, previousData) => {
-      queryClient.setQueryData([QUERIES.ADMIN_MAIN_PAGE_DOCTOR_LIST], previousData) // rollback
+      queryClient.setQueryData([QUERIES.ADMIN_MAIN_PAGE_TEAM_LIST], previousData) // rollback
 
       if (AxiosUtil.isAxiosError(err) && err.response?.data.message) {
         toast.error(err.response.data.message)

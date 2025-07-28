@@ -1,0 +1,3 @@
+import MainPageProjectGroupFormCard from './MainPageProjectGroupFormCard'
+
+export default MainPageProjectGroupFormCard
